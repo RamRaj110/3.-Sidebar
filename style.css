@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin' sans-serif;
+}
+
+.main-box {
+    position: relative;
+    background: url(1.jpg) center no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.main-box .side-bar {
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.5);
+}
+
+.side-bar .logo {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.5);
+}
+
+.side-bar .logo a {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    left: 50px;
+    line-height: 60px;
+}
+
+.main-box .side-bar .list {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+}
+
+.main-box .side-bar .list li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.side-bar .list ion-icon {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.side-bar .list a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.main-box .side-bar .list li:hover {
+    border-left: 1px solid #fff;
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+}
+
+.side-bar .social-media {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.side-bar .social-media ion-icon {
+    padding: 0 5px;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.6;
+    transition: all 0.2s linear;
+
+}
+
+.social-media ion-icon:hover {
+    opacity: 1;
+
+}
+
+#check {
+    display: none;
+}
+
+.main-box .btn-one ion-icon {
+    font-size: 35px;
+    color: #fff;
+    position: absolute;
+    font-weight: 700;
+    top: 14px;
+    left: 16px;
+    line-height: 70px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.side-bar .btn-two ion-icon {
+    position: absolute;
+    font-size: 25px;
+    left: 240px;
+    color: #fff;
+    top: 14px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    opacity: 1;
+}
+.btn-two ion-icon:hover{
+    font-size: 24px;
+
+}
+.btn-two ion-icon:hover{
+    font-size: 29px;
+
+}
+#check:checked~.side-bar{
+    left: 0px;
+}
+#check:checked~.btn-one ion-icon{
+    opacity: 0;
+}
+#check:checked~.side-bar .btn-two ion-icon{
+    opacity: 1;
+}
